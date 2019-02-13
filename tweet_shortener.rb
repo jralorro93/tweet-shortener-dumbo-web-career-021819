@@ -43,8 +43,7 @@ end
 def shortened_tweet_truncator(tweet)
   new_phrase = nil
   tweet.split(" ").each do |phrase|
-    if phrase.length > 140
-            binding.pry
+    phrase.split(" ")
       new_phrase = word_substituter(phrase[0..140]) + "..."
     else 
       phrase
